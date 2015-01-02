@@ -75,7 +75,7 @@
 		qcom,mdss-rot-block-size = <64>;
 		qcom,mdss-rotator-ot-limit = <2>;
 		qcom,mdss-wfd-mode = "shared";
-		qcom,mdss-smp-mb-per-pipe = <3>;
+		qcom,mdss-smp-mb-per-pipe = <2>;
 		vdd-cx-supply = <&pm8226_s1_corner>;
 		qcom,mdss-idle-power-collapse-enabled;
 
