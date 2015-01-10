@@ -378,7 +378,12 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
-		   --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=1024
+		   -floop-parallelize-all \
+		   -fgraphite-identity \
+		   -fprefetch-loop-arrays \
+		   -fno-gcse \
+		   --param l1-cache-size=16 --param l1-cache-line-size=32 --param l2-cache-size=1024 \
+		   --param simultaneous-prefetches=8
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__
