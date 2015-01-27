@@ -72,7 +72,7 @@
 		qcom,mdss-dsi-off-command = [05 01 00 00 00 00 01 28
 					05 01 00 00 70 00 01 10];
 		qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
-		qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+		qcom,mdss-dsi-off-command-state = "dsi_lp_mode";
 		qcom,mdss-dsi-idle-on-command = [
 					39 00 00 00 00 00 03 51 00 00 /*DBV Setting*/
 					39 00 00 00 00 00 18 DB
