@@ -370,7 +370,7 @@ static int bq27421_probe(struct i2c_client *client,
 {
 	struct i2c_adapter *adapter = to_i2c_adapter(client->dev.parent);
 	struct bq27421_chip *chip;
-	int ret;
+	int ret = 0;
 
 	if (!i2c_check_functionality(adapter, I2C_FUNC_SMBUS_BYTE_DATA |
 						I2C_FUNC_SMBUS_BYTE_DATA |
